@@ -1,0 +1,6 @@
+healthcheck-java:
+  image: renaalve/healthcheck-java
+  container_name: healthcheck-java
+  environment: 
+    - HEALTHCHECK_URL=http://localhost
+  command: "ls -la"
